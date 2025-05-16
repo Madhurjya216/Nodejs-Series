@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .main {
+        height: 100vh;
+      }
+
+      .btn {
+        background: green;
+        color: white;
+        padding: 10px 20px;
+      }
+
+      .btn:hover {
+        cursor: pointer;
+      }
+
+      .form {
+        position: relative;
+        z-index: 10;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main bg-black w-full">
+      <div class="form flex flex-col items-center">
+        <form action="/submit" method="POST" class="w-full max-w-2xl">
+          <input
+            type="text"
+            name="text"
+            id=""
+            class="bg-gray-200 w-full h-10 rounded-md p-2 mb-4"
+            placeholder="text"
+          />
+          <div class="mt-5">
+            <textarea
+              name="msg"
+              id=""
+              cols="30"
+              rows="10"
+              class="bg-gray-200 rounded-md p-2 w-full"
+            ></textarea>
+          </div>
+          <button class="btn mt-4">click here</button>
+        </form>
+      </div>
+
+      <div class="contents absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
+        <div class="contents absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
+        <div class="content">
+          <h1 class="text-3xl font-bold text-white mt-10">Hello world!</h1>
+          <p class="text-white">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="content">
+          <h1 class="text-3xl font-bold text-white mt-10">Hello world!</h1>
+          <p class="text-white">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
